@@ -46,7 +46,7 @@
       <div>
       <% matching_user = User.where({ :id => a_board.user_id}) %>
 
-      <% the_user = matching_users.at(0) %>
+      <% the_user = matching_user.at(0) %>
 
       <%= the_user.email %>
 
